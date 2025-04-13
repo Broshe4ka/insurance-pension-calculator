@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Calc</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="icon.svg" type="svg" />
+    <script src="calc.js" defer></script>
+  </head>
+  <body>
+    <form class="form" autocomplete="off">
+      <h1 class="title">Калькулятор страховой премии</h1>
+      <div class="radio">
+        <h2 class="radio__title">Выберите тариф покрытия:</h2>
+        <div class="radio__group">
+          <div class="radio__button">
+            <label class="lable__text" for="only_smr">
+              СМР
+            </label>
+            <input
+              class="radio__elem"
+              type="radio"
+              name="tariff"
+              value="only_smr"
+              id="only_smr"
+              checked
+            />
+          </div>
+          <div class="radio__button">
+            <label class="lable__text" for="only_go">ГО</label>
+            <input
+              class="radio__elem"
+              type="radio"
+              name="tariff"
+              value="only_go"
+              id="only_go"
+            />
+          </div>
+          <div class="radio__button">
+            <label class="lable__text" for="smr_and_go">
+              СМР + ГО
+            </label>
+            <input
+              class="radio__elem"
+              type="radio"
+              name="tariff"
+              value="smr_and_go"
+              id="smr_and_go"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="input">
+        <div class="input__group" id="smr_group">
+          <label class="lable__text" for="smr">
+            Сумма страхования (СМР)
+          </label>
+          <input class="input__elem" id="smr" type="text" />
+        </div>
+        <div
+          class="input__group"
+          id="go_group"
+          style="display: none"
+        >
+          <label class="lable__text" for="go">
+            Сумма страхования (ГО)
+          </label>
+          <input class="input__elem" id="go" type="text" />
+        </div>
+      </div>
+      <div class="buttons">
+        <button
+          type="button"
+          class="button buttons__elem"
+          id="calc_button"
+        >
+          Рассчитать
+        </button>
+        <div class="col buttons__elem">
+          <span>Ваша страховая премия:</span>
+          <span class="result"></span>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

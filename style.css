@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input {
+  font-size: inherit;
+  font-family: inherit;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+html {
+  font-size: 20px;
+  letter-spacing: 1%;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: 'wdth' 100, 'YTLC' 500;
+
+  color: #b9b9b9;
+
+  width: 100vw;
+  min-height: 100vh;
+
+  padding: 2.4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #1c1c1c;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.title {
+  color: #fff8ed;
+  font-size: 2.4rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+.radio {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.radio__title {
+  color: #fff8ed;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.radio__group {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.8rem;
+}
+
+.radio__button {
+  display: flex;
+  gap: 0.2rem;
+  padding: 0.4rem;
+  cursor: pointer;
+}
+
+.radio__button input[type='radio'] {
+  order: -1;
+}
+
+.radio__elem {
+}
+
+.lable__text {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.input__group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.2rem;
+}
+
+.input__elem {
+  font-size: 1.2rem;
+  font-weight: 500;
+
+  width: 100%;
+  max-width: 24rem;
+  padding: 0.3rem 0.6rem;
+
+  border-radius: 0.4rem;
+
+  border: 2px solid transparent;
+
+  color: #fff8ed;
+  background: #111111;
+
+  transition: 0.3s ease-in-out border;
+}
+
+.input__elem:focus {
+  border-color: #3f3f3f;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  gap: 0.8rem;
+  min-height: 3rem;
+}
+
+.button {
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+
+  border: 2px solid transparent;
+  border-radius: 0.4rem;
+
+  color: #fff8ed;
+  background: #111111;
+
+  transition: 0.3s ease-in-out border;
+
+  outline: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  border-color: #fff8ed;
+}
+
+.button:active {
+  border-color: #55524e;
+  transition: 0s;
+}
+
+.buttons__elem {
+  width: calc(50% - 0.4rem);
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.result {
+  font-weight: 900;
+}
