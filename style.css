@@ -83,6 +83,7 @@ body {
 
 .radio__button {
   display: flex;
+  align-items: center;
   gap: 0.2rem;
   padding: 0.4rem;
   cursor: pointer;
@@ -91,9 +92,9 @@ body {
 .radio__button input[type='radio'] {
   order: -1;
 }
-
+/* 
 .radio__elem {
-}
+} */
 
 .lable__text {
   font-size: 1.2rem;
@@ -179,4 +180,10 @@ body {
 }
 .result {
   font-weight: 900;
+}
+
+@media (max-width: 767px) {
+  html {
+    font-size: 16px;
+  }
 }
